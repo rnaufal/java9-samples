@@ -19,9 +19,4 @@ public class Car {
     public String toString() {
         return "Car{model='" + model + "'}";
     }
-
-    public static void main(String[] args) {
-        Car car = new Car("Chevrolet");
-        System.out.println(car);
-    }
 }
