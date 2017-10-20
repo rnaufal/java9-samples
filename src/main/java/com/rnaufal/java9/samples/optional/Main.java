@@ -32,8 +32,8 @@ public class Main {
         final People people = new People();
         people.addAll(List.of(mark, john, paul));
 
-        System.out.println(people.carsFrom(person -> "Mark".equals(person.getName())));
-        System.out.println(people.carsFrom(person -> "Paul".equals(person.getName())));
-        System.out.println(people.allCars());
+        System.out.println(people.findCarsBy(person -> "Mark".equals(person.getName())));
+        System.out.println(people.findCarsBy(person -> "Paul".equals(person.getName())));
+        System.out.println(people.findAllCars());
     }
 }

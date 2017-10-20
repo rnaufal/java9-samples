@@ -18,7 +18,7 @@ public class People {
         this.people.addAll(people);
     }
 
-    public Collection<Car> carsFrom(final Predicate<Person> predicate) {
+    public Collection<Car> findCarsBy(final Predicate<Person> predicate) {
         return people
                 .stream()
                 .filter(predicate)
@@ -29,7 +29,7 @@ public class People {
                 .orElse(Collections.emptyList());
     }
 
-    public Collection<Car> allCars() {
+    public Collection<Car> findAllCars() {
         return people
                 .stream()
                 .map(Person::getCars)
